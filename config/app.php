@@ -168,6 +168,7 @@ return [
          */
 
         PragmaRX\Google2FA\Vendor\Laravel\ServiceProvider::class,
+        RobbieP\ZbarQrdecoder\ZbarQrdecoderServiceProvider::class,
 
         /*
          * Application Service Providers...

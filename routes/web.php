@@ -13,11 +13,12 @@
 
 Auth::routes();
 
-Route::post('/logout', 'HomeController@logout');
 Route::get('/', 'HomeController@index');
-Route::get('/home', 'HomeController@index');
-Route::get('getQrcode', 'HomeController@getQrcode');
+Route::get('home', 'HomeController@index');
 Route::get('select', 'HomeController@select');
+Route::post('logout', 'HomeController@logout');
+Route::get('getQrcode', 'HomeController@getQrcode');
+Route::post('resetQrcode', 'HomeController@resetQrcode');
 
 Route::get('passport', 'OauthController@login');
 Route::post('passport', 'OauthController@check');

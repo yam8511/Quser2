@@ -18,23 +18,22 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        if(!Auth::user()->valid)
-        {
+        $user = Auth::user();
+        if ($user->secret && !$user->valid) {
             return redirect('select');
         }
-        return view('home.index');
+        return view('map.index');
     }
 
     public function getQrcode(Google2FA $google2fa)
     {
         $user = Auth::user();
+        if ($user->secret && !$user->valid) {
+            return redirect('select');
+        }
+        
         if (!$user->secret) {
             $user->secret = $google2fa->generateSecretKey();
             $user->save();
@@ -47,6 +46,23 @@ class HomeController extends Controller
         );
 
         $data = ['googleUrl' => $google2fa_url];
+
+        return view('home.getQR', $data);
+    }
+
+    public function resetQrcode(Google2FA $google2fa)
+    {
+        $user = Auth::user();
+        $user->secret = $google2fa->generateSecretKey();
+        $user->save();
+
+        $google2fa_url = $google2fa->getQRCodeGoogleUrl(
+            'Quser',
+            $user->email,
+            $user->secret
+        );
+
+        $data = ['googleUrl' => $google2fa_url, 'success' => 'QRCide 重設成功'];
 
         return view('home.getQR', $data);
     }

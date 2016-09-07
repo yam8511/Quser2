@@ -2,6 +2,7 @@
 @section('title', 'Validate')
 
 @section('content')
+	<h2 class="w3-margin w3-center">請選擇一驗證方式</h2>
 	<div class="w3-row-padding">
 		<div class="w3-col s6" >
 			<div class="w3-container w3-center" >

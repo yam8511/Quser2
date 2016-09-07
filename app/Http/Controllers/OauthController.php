@@ -9,6 +9,11 @@ use Auth;
 
 class OauthController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function login()
     {
         return view('oauth.validate');
@@ -21,13 +26,12 @@ class OauthController extends Controller
 
         if(!$google2fa->verifyKey($user->secret, $secret))
         {
-            $data = ['error' => '驗證失敗'];
-            return redirect('passport', $data);
+            return redirect('passport')->with('error', 'QRCode 無效!');
         }
 
         $user->valid = 1;
         $user->save();
-        $data = ['success' => '驗證成功'];
-        return redirect('/');
+
+        return redirect('/')->with('success', '驗證成功');
     }
 }
