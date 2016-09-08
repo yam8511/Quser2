@@ -3,7 +3,7 @@
 
 @section('content')
 <style type="text/css">
-	#map > div{
+	#map{
 		min-height: 430px;
 	}
 </style>

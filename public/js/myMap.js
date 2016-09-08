@@ -131,7 +131,14 @@ function initMap(lat = 24.163669, lng = 120.637566)
 	        icon: image
 	      }));
 	    } else {
-	      alert('Geocode was not successful for the following reason: ' + status);
+	    	  if(status == 'ZERO_RESULTS')
+	    	  {
+	    	  	alert('請輸入一個地點');
+	    	  }
+	       else
+	       {
+	       	alert('Geocode was not successful for the following reason: ' + status);
+	       }
 	    }
 	  });
 	}

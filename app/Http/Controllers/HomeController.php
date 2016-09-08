@@ -45,7 +45,13 @@ class HomeController extends Controller
             $user->secret
         );
 
-        $data = ['googleUrl' => $google2fa_url];
+        $inline_url = $google2fa->getQRCodeInline(
+            'Quser',
+            $user->email,
+            $user->secret
+        );
+
+        $data = ['googleUrl' => $google2fa_url, 'inlineUrl' => $inline_url];
 
         return view('home.getQR', $data);
     }
@@ -56,15 +62,7 @@ class HomeController extends Controller
         $user->secret = $google2fa->generateSecretKey();
         $user->save();
 
-        $google2fa_url = $google2fa->getQRCodeGoogleUrl(
-            'Quser',
-            $user->email,
-            $user->secret
-        );
-
-        $data = ['googleUrl' => $google2fa_url, 'success' => 'QRCide 重設成功'];
-
-        return view('home.getQR', $data);
+        return redirect('getQrcode')->with('success', 'QRCide 重設成功');
     }
 
     public function select()
