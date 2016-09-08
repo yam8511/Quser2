@@ -1,5 +1,5 @@
-@extends('layouts.app')
-
+@extends('layouts.main')
+@section('title', 'Email')
 <!-- Main Content -->
 @section('content')
 <div class="container">
