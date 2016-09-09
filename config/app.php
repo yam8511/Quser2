@@ -169,6 +169,8 @@ return [
 
         PragmaRX\Google2FA\Vendor\Laravel\ServiceProvider::class,
         RobbieP\ZbarQrdecoder\ZbarQrdecoderServiceProvider::class,
+        Zoular\Quser\QuserServiceProvider::class,
+        //Zoular\Quser2\Quser2ServiceProvider::class,
 
         /*
          * Application Service Providers...

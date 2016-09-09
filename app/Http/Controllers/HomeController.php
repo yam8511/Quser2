@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use PragmaRX\Google2FA\Contracts\Google2FA;
+use Zoular\Quser\QuserInterface as QI;
 use Auth;
 
 class HomeController extends Controller

@@ -1,0 +1,14 @@
+{
+    "name": "zoular/quser",
+    "require": {
+        "robbiep/zbar-qrdecoder": "^2.0",
+        "pragmarx/google2fa": "^1.0",
+        "bacon/bacon-qr-code": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Zuolar",
+            "email": "yam8511@gmail.com"
+        }
+    ]
+}

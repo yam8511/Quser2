@@ -2240,3 +2240,39 @@ Stack trace:
 #43 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #44 /var/www/html/Quser/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #45 {main}  
+[2016-09-09 05:27:41] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'Zoular\Quser\QuserServiceProvider' not found in /var/www/html/Oauth2_QRCode_GMap_inLaravel_wihtTDD/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:146
+Stack trace:
+#0 /var/www/html/Oauth2_QRCode_GMap_inLaravel_wihtTDD/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(114): Illuminate\Foundation\ProviderRepository->createProvider('Zoular\\Quser\\Qu...')
+#1 /var/www/html/Oauth2_QRCode_GMap_inLaravel_wihtTDD/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(60): Illuminate\Foundation\ProviderRepository->compileManifest(Array)
+#2 /var/www/html/Oauth2_QRCode_GMap_inLaravel_wihtTDD/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(541): Illuminate\Foundation\ProviderRepository->load(Array)
+#3 /var/www/html/Oauth2_QRCode_GMap_inLaravel_wihtTDD/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#4 /var/www/html/Oauth2_QRCode_GMap_inLaravel_wihtTDD/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(203): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#5 /var/www/html/Oauth2_QRCode_GMap_inLaravel_wihtTDD/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(253): Illuminate\Foundation\Application->bootstrapWith(Array)
+#6 /var/www/html/Oauth2_QRCode_GMap_inLaravel_wihtTDD/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->bootstrap()
+#7 /var/www/html/Oauth2_QRCode_GMap_inLaravel_wihtTDD/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#8 /var/www/html/Oauth2_QRCode_GMap_inLaravel_wihtTDD/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#9 {main}  
+[2016-09-09 05:29:36] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'Zoular\Quser\QuserServiceProvider' not found in /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:146
+Stack trace:
+#0 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(114): Illuminate\Foundation\ProviderRepository->createProvider('Zoular\\Quser\\Qu...')
+#1 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(60): Illuminate\Foundation\ProviderRepository->compileManifest(Array)
+#2 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(541): Illuminate\Foundation\ProviderRepository->load(Array)
+#3 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#4 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(203): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#5 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(253): Illuminate\Foundation\Application->bootstrapWith(Array)
+#6 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->bootstrap()
+#7 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#8 /var/www/html/Quser/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#9 {main}  
+[2016-09-09 05:30:36] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'Zoular\Quser\QuserServiceProvider' not found in /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:146
+Stack trace:
+#0 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(114): Illuminate\Foundation\ProviderRepository->createProvider('Zoular\\Quser\\Qu...')
+#1 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(60): Illuminate\Foundation\ProviderRepository->compileManifest(Array)
+#2 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(541): Illuminate\Foundation\ProviderRepository->load(Array)
+#3 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#4 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(203): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap(Object(Illuminate\Foundation\Application))
+#5 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(253): Illuminate\Foundation\Application->bootstrapWith(Array)
+#6 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->bootstrap()
+#7 /var/www/html/Quser/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#8 /var/www/html/Quser/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#9 {main}  

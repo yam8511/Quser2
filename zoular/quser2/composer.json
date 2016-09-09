@@ -1,0 +1,13 @@
+{
+    "name": "zuolar/quser2",
+    "require": {
+        "pragmarx/google2fa": "^1.0",
+        "simplesoftwareio/simple-qrcode": "^1.4"
+    },
+    "authors": [
+        {
+            "name": "Zoular",
+            "email": "zoular.li@gmail.com"
+        }
+    ]
+}
